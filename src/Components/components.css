@@ -1,0 +1,99 @@
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+.theme-switcher-btn{
+    font-size: 1.4rem;
+    padding: 10px 15px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+
+/* ============  Social-media -card */
+
+.social-media-container{
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.social-media-card{
+    background-color: var(--bg-card);
+    width: 250px;
+    text-align: center;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
+}
+.followers-number{
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+.positive-growth{
+    color: var(--green);
+}
+.negative-growth{
+    color: var(--red);
+}
+.followers-text{
+    letter-spacing: 2px;
+    color: var(--blue-text);
+}
+.userName{
+    color: var(--blue-text);
+}
+.icon{
+    font-size: 1.5rem;
+    margin-right: 10px;
+}
+
+.instagram-card{
+    border-top: 3px solid;
+    border-image: linear-gradient(to right, hsl(37, 97%, 70%),hsl(329, 70%, 58%))10;
+}
+.twitter-card{
+    border-top: 3px solid hsl(203, 89%, 53%);
+}
+.youtube-card{
+    border-top: 3px solid hsl(348, 97%, 39%);
+}
+.facebook-card{
+    border-top: 3px solid hsl(208, 92%, 53%);
+}
+
+/* ============= Overview Section ======== */
+
+.overview-container{
+    display: flex;
+    /* align-items: center; */
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.overview-card{
+    background-color: var(--bg-card);
+    padding: 10px 20px;
+    margin: 10px 15px ;
+    width: 250px;
+}
+.overview-card-div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px;
+}
+.overview-heading{
+    margin-left: 30px;
+}
+
+@media screen and (max-width: 764px) {
+    .social-media-container{
+         justify-content: center;
+         flex-wrap: wrap;
+    }
+}

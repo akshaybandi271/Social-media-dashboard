@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+*,
+*::after,
+*::before{
+  box-sizing: border-box;
+}
+
+:root{
+   /* Dark Mode */
+   --bg-dark: hsl(230, 17%, 14%);
+   --bg-card-dark: hsl(228, 28%,20%);
+   --blue-text-dark:  hsl(228, 34%, 66%);
+   --text-dark:  hsl(0, 0%, 100%);
+   
+
+   /* Light Mode */
+   --bg-light: hsl(0, 0%, 100%);
+   --bg-card-light: hsl(225, 100%, 98%);
+   --blue-text-light: hsl(228, 12%, 44%);
+   --text-light: hsl(230, 17%, 14%);
+   --green:  hsl(163, 72%, 41%);
+  --red: hsl(356, 69%, 56%);
+}
+
+@media(prefers-color-scheme : light){
+  :root{
+    --bg : var(--bg-light);
+    --bg-card: var(--bg-card-light);
+    --blue-text: var(--bg-blue-light);
+    --text: var(--text-light);
+    --green:  hsl(163, 72%, 41%);
+    --red: hsl(356, 69%, 56%);
+  }
+
+}
+
+@media(prefers-color-scheme : dark){
+  :root{
+    --bg : var(--bg-dark);
+    --bg-card: var(--bg-card-dark);
+    --blue-text: var(--bg-blue-dark);
+    --text: var(--text-dark);
+    --green:  hsl(163, 72%, 41%);
+    --red: hsl(356, 69%, 56%);
+  }
+}
+
+:root[color-scheme = "light"]{
+  --bg : var(--bg-light);
+  --bg-card: var(--bg-card-light);
+  --blue-text: var(--bg-blue-light);
+  --text: var(--text-light);
+  --green:  hsl(163, 72%, 41%);
+  --red: hsl(356, 69%, 56%);
+}
+
+:root[color-scheme = "dark"]{
+  --bg : var(--bg-dark);
+  --bg-card: var(--bg-card-dark);
+  --blue-text: var(--bg-blue-dark);
+  --text: var(--text-dark);
+  --green:  hsl(163, 72%, 41%);
+  --red: hsl(356, 69%, 56%);
+}
+
+
+
+body{
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', sans-serif;
+  background-color: var(--bg);
+  color: var(--text)
+ 
+}
